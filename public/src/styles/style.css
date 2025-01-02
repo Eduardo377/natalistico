@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 :root {
   --v-primary-color-white: #ffffff;
   --v-primary-color-red: #8B1414;
@@ -17,6 +12,53 @@ a {
   color: var(--v-primary-color-white);
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 body {
   background-color: var(--v-primary-color-red);
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Great Vibes", cursive;
+  width: 100%;
+  background-image: url("../../assets/background-flocos.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body header .header-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+body header .header-container img {
+  width: 30%;
+  margin-left: 1rem;
+}
+body header .header-container h1 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+body header nav {
+  width: 50%;
+}
+body header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+body header nav ul li {
+  margin-right: 1rem;
+  font-weight: 400;
+  font-size: 3rem;
+}
+body header nav ul li a {
+  color: var(--v-primary-color-white);
 }/*# sourceMappingURL=style.css.map */
