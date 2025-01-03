@@ -21,44 +21,95 @@ body {
   background-color: var(--v-primary-color-red);
 }
 body header {
+  font-family: "Great Vibes", cursive;
+}
+body header .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Great Vibes", cursive;
+  flex-wrap: wrap;
   width: 100%;
-  background-image: url("../../assets/background-flocos.png");
+  background-image: url("../../assets/background-header.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
-body header .header-container {
+body header .header .header-container {
   display: flex;
   align-items: center;
   width: 50%;
+  flex-wrap: wrap;
 }
-body header .header-container img {
+body header .header .header-container img {
   width: 30%;
   margin-left: 1rem;
 }
-body header .header-container h1 {
+body header .header .header-container h1 {
   font-weight: 400;
   font-size: 3rem;
 }
-body header nav {
+body header .header nav {
   width: 50%;
 }
-body header nav ul {
+body header .header nav ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
   display: flex;
   width: 100%;
   list-style: none;
+  flex-wrap: wrap;
 }
-body header nav ul li {
+body header .header nav ul li {
   margin-right: 1rem;
   font-weight: 400;
   font-size: 3rem;
 }
-body header nav ul li a {
+body header .header nav ul li a {
   color: var(--v-primary-color-white);
+}
+body header .header-image {
+  width: 100%;
+  height: auto;
+}
+body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 100%;
+}
+body main .section-container {
+  background-image: url("../../assets/background-main.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+body main .section-container article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .section-container article img {
+  height: 11.75rem;
+  width: 11.75rem;
+}
+body main .section-container article p {
+  width: 50%;
+  height: 6.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "iria sans", sans-serif;
+}
+body main .gallery-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--v-primary-color-skin);
+  height: 80%;
+}
+body main .gallery-container img {
+  width: 30%;
 }/*# sourceMappingURL=style.css.map */
